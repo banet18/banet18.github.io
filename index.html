@@ -1,44 +1,247 @@
- <html>
-  <head> 
-    <style> 
-      body {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-      }
-      .parent {
-        margin: 0;
-        position: relative;
-        height: 100%;
-        background: 
-          linear-gradient(
-            rgba(0, 0, 0, 0.5), 
-          rgba(0, 0, 0, 0.8)
-        ),
-        url("nb.jpeg"); 
-        background-size: cover;
-      }
-      .child {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -70%);
-      }
-      p {
-        text-align: center;
-        color: white;
-        font-size: 18;
-      }
+<!DOCTYPE html>
 
-      }
-  </style>
-  </head>
-  <body>
-    <div class="parent"> 
-      <div class = "child"> 
-        <p style="font-size:100px;margin-bottom:0;"> Coming Soon  </p>
-        <p style="font-size:20px"> Our site is under construction. Pleaes check back later for our finished site! </p>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/favicon1.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon1.ico" type="image/x-icon">
+    
+    <title>Boston Academy Network </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/card.css" rel="stylesheet"> 
+    
+</head>
+
+<body>
+    <!-- Navigation -->
+    <!-- default bar that is fixed at top indep. of page scroll --> 
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <!--collapse when screen size is too small --> 
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Navbar links - what to collapse -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a data-scroll data-options = '{ "easing": "easeInOutQuad", "speed": 700}' href = "#">Home</a>
+                    </li>
+                    <li>
+                        <a data-scroll data-options = '{ "easing": "easeInOutQuad", "speed": 700, "offset": 50}' href="#mission">About</a>
+                    </li>
+                     <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#" onClick="document.location.href='services_korean/counseling.html'">교육상담</a></li>
+                        <li><a href="#" onClick="document.location.href='services_korean/tutoring.html'">튜터/멘토링</a></li>
+                        <li><a href="#" onClick="document.location.href='services_korean/extracurricular.html'">특별활동 프로그램</a></li>
+                        <li><a href="#" onClick="document.location.href='services_korean/tour.html'">IVY/ 보스톤 대학 투어</a></li>   
+                        <li><a href="#" onClick="document.location.href='services_korean/studyabroad.html'">유학 </a></li>
+                        <li><a href="#" onClick="document.location.href='services_korean/camp.html'">캠프/인턴쉽 </a></li>
+                      </ul>
+                    </li>
+                    <li>
+                        <a data-scroll data-options = '{ "easing": "easeInOutQuad", "speed": 700, "offset": 50}' href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="e_index.html"> English </a> 
+                    </li>
+                </ul>
+                
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+
+  <!-- Header -->
+    <header class="main_header">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Boston Academy Network</h1>
+                  <div class="row"> 
+                    <div id="header_buttons" class="col-sm-12"> 
+                      <a data-scroll data-options = '{ "easing": "easeInOutQuad", "speed": 700, "offset": 50}'
+                      href="#services">See Services</a>
+                      <a data-scroll data-options = '{ "easing": "easeInOutQuad", "speed": 700, "offset": 50}'
+                      href="#contact" class="button-left">Contact Us</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </header>
+
+  <!-- Intro Section -->
+    <section class="intro" id = "mission">
+        <div class="container">
+            <div class = "row"> 
+              <div class = "col-md-12"> 
+            </div>
+            <div class="row">
+                <div class = "col-md-12">
+                    <div class = "media"> 
+   <!--                    <div class = "media-left">
+                        <img class = "media-object about_image" src = "images/danielpic.jpg" alt = ""> 
+                      </div> -->
+                      <div class = "media-body"> 
+                        <h2 class="intro_header" > About </h2>
+                        <p class="intro_body"> 
+                          <strong >Boston Academy Network (BANET)</strong>은 교육의 도시 보스톤에 위치하고 있으며, 현지 교육환경과 보스톤에서 초등학교부터 명문대학 입학까지의 경험을 바탕으로 교육의 진정한 컨설팅을 지향합니다. 학생과 부모와의 개인 상담을 통하여 학생 개개인에게 알맞는 맞춤형 서비스를 제공하므로 스스로 올바른 선택과 경험을 하도록 돕는 것을 최고의 목표로 하고 있습니다. IVY 대학의 재학생이나 졸업생들로 구성된 선생님들과 1:1온라인 수업방식으로 학습지도와 공부 습관에 대한 “How”를 지도합니다. 
+                         </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content 1 --> 
+    <section class = "content content-1" id = "services"> 
+      <div class = "features"> 
+        <div class = "container"> 
+          <div class = "row">
+              <div class = "col-md-12"> 
+                  <h2 class="section2"> Services </h2>
+              </div>
+          </div>
+          <div class = "row top_buffer"> 
+            <div class="col-sm-4 col-sm-offset-2"> 
+              <div class="service card" onClick="document.location.href='services_korean/counseling.html'">
+                <div class = "wrapper" >
+                  <div class="glyphicon glyphicon-education service_images"></div>
+                  <div class = "service_text"> 
+                    <p class="service_title"> 교육상담 </p>
+                    <span class="learn_more"> 더보기 </span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4"> 
+              <div class="card service" onClick="document.location.href='services_korean/tutoring.html'"> 
+             <div class = "wrapper" >
+                  <div class="glyphicon glyphicon-blackboard service_images"></div>
+                  <div class = "service_text"> 
+                    <p class="service_title"> 튜터/멘토링 </p>
+                    <span class="learn_more"> 더보기 </span>
+                  </div>
+                </div>
+              </div>
+              </div>  
+            </div> 
+          <div class = "row top_buffer"> 
+            <div class="col-sm-4 col-sm-offset-2"> 
+              <div class="service card" onClick="document.location.href='services_korean/extracurricular.html'">
+                <div class = "wrapper" >
+                  <div class="glyphicon glyphicon-music service_images"></div>
+                  <div class = "service_text"> 
+                    <p class="service_title"> 특별활동 프로그램 </p>
+                    <span class="learn_more"> 더보기 </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-sm">             
+              <div class="service card" onClick="document.location.href='services_korean/tour.html'">
+                <div class = "wrapper" >
+                  <div class="glyphicon glyphicon-road service_images"></div>
+                  <div class = "service_text"> 
+                    <p class="service_title"> IVY/ 보스톤 대학 투어 </p>
+                    <span class="learn_more"> 더보기 </span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div> 
+          <div class = "row top_buffer"> 
+            <div class="col-sm-4 col-sm-offset-2"> 
+              <div class="service card" onClick="document.location.href='services_korean/studyabroad.html'">
+                <div class = "wrapper" >
+                  <div class="glyphicon glyphicon-globe service_images"></div>
+                  <div class = "service_text"> 
+                    <p class="service_title"> 유학 </p>
+                     <span class="learn_more"> 더보기 </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4"> 
+              <div class="card service" onClick="document.location.href='services_korean/camp.html'"> 
+             <div class = "wrapper" >
+                  <div class="glyphicon glyphicon-flag service_images"></div>
+                  <div class = "service_text"> 
+                    <p class="service_title"> 캠프/인턴쉽 </p>
+                    <span class="learn_more"> 더보기 </span> 
+                  </div>
+                </div>
+              </div>
+              </div>  
+            </div> 
+          </div>
+        </div>
+        </div>
       </div>
-    </div>
-  </body>
+    </section>
+    
+  <!-- Footer -->
+    <footer class="page-footer">
+    
+      <!-- Contact Us -->
+        <div class="contact" id = "contact">
+          <div class="container">
+            <h2 class="section-heading">Contact Us</h2>
+            <div class = "row">
+              <div class = "col-sm-4">
+                <p><span class="glyphicon glyphicon-earphone"></span><br> 1-781-428-6317</p>
+              </div>
+              <div class = "col-sm-4">
+                <p><span class="glyphicon glyphicon-envelope"></span><br> info@bostonacademy.network </p>
+              </div>
+              <div class = "col-sm-4">
+                <p><span class="glyphicon glyphicon-comment"></span><br> Kakao ID: jkyungpark</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        <!-- Copyright etc -->
+        <div class="small-print">
+          <div class="container">
+            <p>Copyright &copy; Boston Academy Network 2018</p>
+          </div>
+        </div>
+        
+    </footer>
+  </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Smooth Scrolling Plugin --> 
+    <script src="js/smooth-scroll.min.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="js/custom.js"></script>
+
+</body>
+
 </html>
+
