@@ -1,245 +1,613 @@
 <!DOCTYPE html>
-
-<html>
-
-<head>
-
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Grayrids">
+    <title>Boston Academy Network</title>
 
-    <link rel="shortcut icon" href="/favicon1.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon1.ico" type="image/x-icon">
-    
-    <title>Boston Academy Network </title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/calluna.css">
+    <link rel="stylesheet" href="css/line-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/color-switcher.css">
+    <link rel="stylesheet" href="css/menu_sideslide.css">
+    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/responsive.css">
 
-    <link href="css/custom.css" rel="stylesheet">
-    <link href="css/card.css" rel="stylesheet"> 
-    
-</head>
-
-<body>
-    <!-- Navigation -->
-    <!-- default bar that is fixed at top indep. of page scroll --> 
-    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Logo and responsive toggle -->
-            <!--collapse when screen size is too small --> 
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <!-- Navbar links - what to collapse -->
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a data-scroll data-options = '{ "easing": "easeInOutQuad", "speed": 700}' href = "#">Home</a>
-                    </li>
-                    <li>
-                        <a data-scroll data-options = '{ "easing": "easeInOutQuad", "speed": 700, "offset": 50}' href="#mission">About</a>
-                    </li>
-                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#" onClick="document.location.href='services_korean/counseling.html'">교육상담</a></li>
-                        <li><a href="#" onClick="document.location.href='services_korean/tutoring.html'">튜터/멘토링</a></li>
-                        <li><a href="#" onClick="document.location.href='services_korean/extracurricular.html'">특별활동 프로그램</a></li>
-                        <li><a href="#" onClick="document.location.href='services_korean/tour.html'">IVY/ 보스톤 대학 투어</a></li>   
-                        <li><a href="#" onClick="document.location.href='services_korean/studyabroad.html'">유학 </a></li>
-                        <li><a href="#" onClick="document.location.href='services_korean/camp.html'">캠프/인턴쉽 </a></li>
-                      </ul>
-                    </li>
-                    <li>
-                        <a data-scroll data-options = '{ "easing": "easeInOutQuad", "speed": 700, "offset": 50}' href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="e_index.html"> English </a> 
-                    </li>
-                </ul>
-                
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container -->
-    </nav>
-
-  <!-- Header -->
-    <header class="main_header">
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Boston Academy Network</h1>
-                  <div class="row"> 
-                    <div id="header_buttons" class="col-sm-12"> 
-                      <a data-scroll data-options = '{ "easing": "easeInOutQuad", "speed": 700, "offset": 50}'
-                      href="#services">See Services</a>
-                      <a data-scroll data-options = '{ "easing": "easeInOutQuad", "speed": 700, "offset": 50}'
-                      href="#contact" class="button-left">Contact Us</a>
-                    </div>
-                  </div>
-            </div>
+  </head>
+  
+  <body>
+    <!-- Header Section Start -->
+    <header id="slider-area">  
+      <nav class="navbar navbar-expand-md fixed-top scrolling-navbar bg-white">
+        <div class="container">          
+          <a class="navbar-brand" href="index.html">BANET</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#slider-area">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#services">Services</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#features">Features</a>
+              </li>                                     
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#contact">Contact</a>
+              </li> 
+            </ul>              
+          </div>
         </div>
+      </nav> 
+
+      <!-- Main Carousel Section -->
+      <div id="carousel-area">
+        <div id="carousel-slider" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="img-overlay">
+                <picture>
+                  <source media="(max-width: 1030px)" srcset="img/main_small.jpg">
+<!--                   <source media="(min-width: 480px)" srcset="MediumImage.png">
+ -->                  <img src="img/main.jpg" alt="main image">
+                </picture>
+<!--                 <img id="main-img" src="img/main_1.jpg" alt="">
+ -->              </div>
+              <div class="carousel-caption text-left">
+                <h3 class="wow fadeInRight" data-wow-delay="0.2s">Welcome to</h1>  
+                <h2 class="wow fadeInRight" data-wow-delay="0.4s">Boston Academy Network</h2>
+                <h4 class="wow fadeInRight" data-wow-delay="0.6s">Cultivate Your Self-Improvement</h4>
+                <a href="#contact" class="btn btn-lg btn-common btn-effect wow fadeInRight page-scroll" data-wow-delay="0.9s">Contact Us</a>
+                <a href="#services" class="btn btn-lg btn-border wow fadeInRight page-scroll" data-wow-delay="1.2s">See Services!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+
     </header>
+    <!-- Header Section End --> 
 
-  <!-- Intro Section -->
-    <section class="intro" id = "mission">
-        <div class="container">
-            <div class = "row"> 
-              <div class = "col-md-12"> 
-            </div>
-            <div class="row">
-                <div class = "col-md-12">
-                    <div class = "media"> 
-   <!--                    <div class = "media-left">
-                        <img class = "media-object about_image" src = "images/danielpic.jpg" alt = ""> 
-                      </div> -->
-                      <div class = "media-body"> 
-                        <h2 class="intro_header" > About </h2>
-                        <p class="intro_body"> 
-                          <strong >Boston Academy Network (BANET)</strong>은 교육의 도시 보스톤에 위치하고 있으며, 현지 교육환경과 보스톤에서 초등학교부터 명문대학 입학까지의 경험을 바탕으로 교육의 진정한 컨설팅을 지향합니다. 학생과 부모와의 개인 상담을 통하여 학생 개개인에게 알맞는 맞춤형 서비스를 제공하므로 스스로 올바른 선택과 경험을 하도록 돕는 것을 최고의 목표로 하고 있습니다. IVY 대학의 재학생이나 졸업생들로 구성된 선생님들과 1:1온라인 수업방식으로 학습지도와 공부 습관에 대한 “How”를 지도합니다. 
-                         </p>
-                      </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Services Section Start -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title">Our Services</h2>
+          <span>Services</span>
         </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.2s" data-toggle="modal" data-target="#educationConsultingModal">
+              <div class="icon color-1">
+                <i class="lni-clipboard"></i>
+              </div>
+              <h4>Education Consulting</h4>
+              <p>Various programs targeted at giving effective consultations for academics, college admissions, study abroad, camp/internships, and early childhood education.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.4s" data-toggle="modal" data-target="#tutoringMentoringModal">
+              <div class="icon color-2">
+                <i class="lni-pencil"></i>
+              </div>
+              <h4>Tutoring / Mentoring</h4>
+              <p>Personalized mentoring sessions aimed at improving a student's learning techniques for effective studying to boost overall academic performance and confidence.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.6s" data-toggle="modal" data-target="#extracurricularActivitiesModal">
+              <div class="icon color-3">
+                <i class="lni-music"></i>
+              </div>
+              <h4>Extracurricular Activities</h4>
+              <p>Guidance for a variety of valuable extracurricular activities such as science, math, history, secondary language, sports, music, and/or art.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.8s" data-toggle="modal" data-target="#ivyBostonCollegeTourModal">
+              <div class="icon color-4">
+                <i class="lni-graduation"></i>
+              </div>
+              <h4>IVY/Boston College Tour</h4>
+              <p>An unique opportunity to tour IVY league schools / other excellent universities with a 1-1 in-person conversation with a student of the university.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="1s" data-toggle="modal" data-target="#studyAbroadModal">
+              <div class="icon color-5">
+                <i class="lni-world"></i>
+              </div>
+              <h4>Study Abroad</h4>
+              <p>Detailed information regarding various schools across the greater Boston area and personalized guidance in choosing the right type of school for the student.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="item-boxes services-item wow fadeInDown" data-wow-delay="1.2s" data-toggle="modal" data-target="#campInternshipModal">
+              <div class="icon color-6">
+                <i class="lni-briefcase"></i>
+              </div>
+              <h4>Camp/Internship</h4>
+              <p>Information and preparation for prestigious camps and/or internships during vacation or the school year fitted to a student's interests and talents.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- Content 1 --> 
-    <section class = "content content-1" id = "services"> 
-      <div class = "features"> 
-        <div class = "container"> 
-          <div class = "row">
-              <div class = "col-md-12"> 
-                  <h2 class="section2"> Services </h2>
-              </div>
-          </div>
-          <div class = "row top_buffer"> 
-            <div class="col-sm-4 col-sm-offset-2"> 
-              <div class="service card" onClick="document.location.href='services_korean/counseling.html'">
-                <div class = "wrapper" >
-                  <div class="glyphicon glyphicon-education service_images"></div>
-                  <div class = "service_text"> 
-                    <p class="service_title"> 교육상담 </p>
-                    <span class="learn_more"> 더보기 </span> 
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4"> 
-              <div class="card service" onClick="document.location.href='services_korean/tutoring.html'"> 
-             <div class = "wrapper" >
-                  <div class="glyphicon glyphicon-blackboard service_images"></div>
-                  <div class = "service_text"> 
-                    <p class="service_title"> 튜터/멘토링 </p>
-                    <span class="learn_more"> 더보기 </span>
-                  </div>
-                </div>
-              </div>
-              </div>  
-            </div> 
-          <div class = "row top_buffer"> 
-            <div class="col-sm-4 col-sm-offset-2"> 
-              <div class="service card" onClick="document.location.href='services_korean/extracurricular.html'">
-                <div class = "wrapper" >
-                  <div class="glyphicon glyphicon-music service_images"></div>
-                  <div class = "service_text"> 
-                    <p class="service_title"> 특별활동 프로그램 </p>
-                    <span class="learn_more"> 더보기 </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 col-sm">             
-              <div class="service card" onClick="document.location.href='services_korean/tour.html'">
-                <div class = "wrapper" >
-                  <div class="glyphicon glyphicon-road service_images"></div>
-                  <div class = "service_text"> 
-                    <p class="service_title"> IVY/ 보스톤 대학 투어 </p>
-                    <span class="learn_more"> 더보기 </span> 
-                  </div>
-                </div>
-              </div>
-            </div>
-            </div> 
-          <div class = "row top_buffer"> 
-            <div class="col-sm-4 col-sm-offset-2"> 
-              <div class="service card" onClick="document.location.href='services_korean/studyabroad.html'">
-                <div class = "wrapper" >
-                  <div class="glyphicon glyphicon-globe service_images"></div>
-                  <div class = "service_text"> 
-                    <p class="service_title"> 유학 </p>
-                     <span class="learn_more"> 더보기 </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4"> 
-              <div class="card service" onClick="document.location.href='services_korean/camp.html'"> 
-             <div class = "wrapper" >
-                  <div class="glyphicon glyphicon-flag service_images"></div>
-                  <div class = "service_text"> 
-                    <p class="service_title"> 캠프/인턴쉽 </p>
-                    <span class="learn_more"> 더보기 </span> 
-                  </div>
-                </div>
-              </div>
-              </div>  
-            </div> 
-          </div>
+    <!-- Services Section End -->
+
+    <!-- Modals -->
+  <div class="modal fade" id="educationConsultingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel">Education Consulting</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-    </section>
-    
-  <!-- Footer -->
-    <footer class="page-footer">
-    
-      <!-- Contact Us -->
-        <div class="contact" id = "contact">
-          <div class="container">
-            <h2 class="section-heading">Contact Us</h2>
-            <div class = "row">
-              <div class = "col-sm-4">
-                <p><span class="glyphicon glyphicon-earphone"></span><br> 1-781-428-6317</p>
-              </div>
-              <div class = "col-sm-4">
-                <p><span class="glyphicon glyphicon-envelope"></span><br> info@bostonacademy.network </p>
-              </div>
-              <div class = "col-sm-4">
-                <p><span class="glyphicon glyphicon-comment"></span><br> Kakao ID: jkyungpark</p>
-              </div>
-            </div>
-          </div>
+        <div class="modal-body">
+          <ul> 
+              <strong> <li style="font-size:20px; line-height: 3em"> Academic consulting </li> </strong>
+                  <ul> 
+                      <li> Objective and concrete information to improve a student’s academic progress  </li>
+                      <li> Tailor class subject and level based on student interest/ability  </li>
+                      <li> School academic schedule consulting  </li>
+                      <li> 1:1 tutoring </li>
+                      <li> Information for extracurriculars during break periods </li>
+                  </ul>
+              <strong> <li style="font-size:20px; line-height: 3em"> Admission planning/consulting </li> </strong>
+                  <ul> 
+                      <li> College admission: Information for application, standardized testing, essays, interviews </li>
+                      <li> Private school admission: Information for application, standardized testing, essays, interviews </li>
+                      <li> Review admission essays </li>
+                  </ul>
+              <strong> <li style="font-size:20px; line-height: 3em"> Study abroad consulting </li> </strong>
+                  <ul> 
+                      <li> Application for private Boston-based schools for international students </li>
+                  </ul>
+              <strong> <li style="font-size:20px; line-height: 3em"> Camp/Internship consulting </li> </strong>
+                  <ul> 
+                      <li> See our camp/internship service for more details
+                  </ul>
+               <strong> <li style="font-size:20px; line-height: 3em"> Early childhood education consulting </li> </strong>
+                  <ul> 
+                      <li> Hands-on learning program to aid transition into an American school system</li>
+                      <li> Experienced teachers with pre-school and/or elementary school teaching experience </li>
+                      <li> Various academic hands-on learning tools and incorporation of Korean writing/culture   </li>
+                  </ul>
+              <strong> <li style="font-size:20px; line-height: 3em">Audience</li> </strong>
+                <ul>
+                  <li>Academic consulting: elementary to high school</li>
+                  <li>Admission planning/consulting: 4th grade to 11th grade</li>
+                  <li>Study abroad consulting: 4th-9th grade</li>
+                  <li>Camp/Internship consulting: elementary to high school for camp, college for internship</li>
+                  <li>Early childhood education consulting: 2-5yr old children</li>
+                </ul>
+          </ul>
         </div>
-          
-        <!-- Copyright etc -->
-        <div class="small-print">
-          <div class="container">
-            <p>Copyright &copy; Boston Academy Network 2018</p>
-          </div>
-        </div>
-        
-    </footer>
+      </div>
+    </div>
   </div>
 
-    <!-- jQuery -->
-    <script src="js/jquery-1.11.3.min.js"></script>
+  <div class="modal fade" id="tutoringMentoringModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel">Tutoring/Mentoring</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul> 
+              <strong> <li style="font-size:20px; line-height: 3em">Sessions</li> </strong>
+              <ul>
+                <li> Sessions will be conducted as 1:1 mentoring sessions </li>
+                <li> This program meets 4 times a month but can vary per student </li>
+              </ul>
+              <strong> <li style="font-size:20px; line-height: 3em">Mentors</li> </strong>
+              <ul>
+                  <li> The mentors will be selected from IVY league schools and each student will be matched to a mentor based on the student’s needs and interests.</li>
+                  <li> The mentors will keep a record of their observations regarding the student and this information will be used during conferences with the student/parents to track their progress </li>
+              </ul>
+              <strong> <li style="font-size:20px; line-height: 3em">Subjects</li> </strong>
+              <ul>
+                <li>English/Writing, Essay, Math, Science, History </li>
+              </ul>
+              <strong> <li style="font-size:20px; line-height: 3em"> Standardized Test Prep </li> </strong>
+                <ul>
+                  <li> After a pre-test, the student will receive a 1:1 consultation session to determine the best route for test prep </li>
+                  <li> PSAT (Preliminary SAT)</li>
+                  <li> SAT (Scholastic Assessment Test) </li>
+                  <li> ACT (American College Testing) </li>
+                  <li> SATII (Subject Test) </li>
+                  <li> AP (Advanced Placement Test) </li>
+                  <li> SSAT (Secondary School Admission Test) </li>
+                  <li> TOEFL </li>
+                  <li> MCAT (Medical College Admission Test) </li>
+                  <li> LSAT (Law School Admission Test) </li>
+                  <li> GRE (Graduate Record Examination) </li>
+                  <li> GMAT (Graduate Management Admission Test) </li>
+                </ul> 
+              </li>
+              <strong> <li style="font-size:20px; line-height: 3em">Audience</li> </strong>
+              <ul>
+                <li>Elementary through college students </li>
+              </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Bootstrap Core JavaScript -->
+  <div class="modal fade" id="extracurricularActivitiesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel">Extracurricular Activities</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul> 
+            <strong> <li style="font-size:20px; line-height: 3em"> National Competition </li> </strong>
+            <ul>
+              <li> Information regarding regional to national-level competitions in Science & Engineering, History, and Math  </li>
+            </ul>
+            <strong> <li style="font-size:20px; line-height: 3em"> Athletics </li> </strong>
+              <ul>
+                <li> Information and guidance regarding sports by season aimed at helping a student reach Jr. Varsity or Varsity level </li>
+              </ul>
+            <strong> <li style="font-size:20px; line-height: 3em"> Music </li> </strong>
+              <ul>
+                <li> Information and guidance regarding the various music schools in Boston and requirements for admission    </li>
+                <li> General information about orchestras, chamber music, and private lessons </li>
+                <li> Guidance on connecting with a private teacher for specific instruments. </li>
+              </ul>
+            <strong> <li style="font-size:20px; line-height: 3em"> Art </li> </strong>
+              <ul>
+                <li> Information and guidance on art programs and admission into art schools </li>
+                <li> Guidance on connecting with a private instructor or a group-based class </li>
+              </ul> 
+            <strong> <li style="font-size:20px; line-height: 3em">Audience</li> </strong>
+            <ul>
+              <li>Elementary through high school students  </li>
+            </ul>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ivyBostonCollegeTourModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel">Ivy/Boston Colleges Tour</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul> 
+              <strong> <li style="font-size:20px; line-height: 3em"> Tour Description </li> </strong>
+              <ul>
+                <li> We provide an opportunity to tour IVY league schools as well as other excellent universities </li>
+                <li> Importantly, we provide an opportunity to have in-person conversation times with a student of the university </li>
+                <li> The guides will be students from the respective universities </li>
+                <li> A tour will only be conducted if there is a minimum interest group of 4 students </li>
+              </ul>
+              <strong> <li style="font-size:20px; line-height: 3em">Accomodations</li> </strong>
+              <ul>
+                <li> We provide housing and transportation (2 people per room. 3 meals per day-Korean, American, Chinese, or Italian) </li>
+              </ul>
+              <strong> <li style="font-size:20px; line-height: 3em"> Tour Itineraries </li> </strong>
+              <ul>
+                <li> 1 nights 2 days: Harvard + MIT, Outlet shopping, Q&A </li>
+                <li> 2 nights 3 days: 2 days + BU, Berklee college of Music or NEC, Boston tour </li>
+                <li> 3 nights 4 days: 3 days + Columbia University and New York tour </li>
+              </ul>
+              <strong> <li style="font-size:20px; line-height: 3em">Audience </li> </strong>
+              <ul>
+                <li>Middle school, high school, college students. Parents are welcome </li>
+              </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="studyAbroadModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel">Study Abroad</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul> 
+              <strong> <li style="font-size:20px; line-height: 3em"> Testing </li> </strong>
+              <ul>
+                <li> We offer information and guidance on potential required testing such as TOEFL or SAT </li>
+              </ul>
+              <strong> <li style="font-size:20px; line-height: 3em"> Accomodation </li> </strong>
+              <ul>
+                <li> For students requiring home-stay, we will connect you with a family that we have hand-selected using rigorous standards </li>
+                <li> We help any student requiring re-location to Boston </li>
+                <li> For those that require short-term home-stay during school vacations, we connect you to one of our home-stay families </li>
+              </ul>
+              <strong> <li style="font-size:20px; line-height: 3em">Audience </li> </strong>
+              <ul>
+                <li>4th to 9th grade students</li>
+              </ul>              
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="campInternshipModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel">Camp/Internship</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul> 
+            <strong> <li style="font-size:20px; line-height: 3em"> Camp </li> </strong>
+              <ul> 
+                <li> We provide information regarding various camps for students during their vacation periods depending on their interests and abilities </li>
+                <li> For select camps, we offer guidance on picking the best-fit programs for students </li>
+                <li> If needed, selected using assessment of ability </li>
+                <li> Programs: Academic: English, math, science  </li>
+                <li> Camp duration: 1 week-6 weeks (depending on the camp) </li>
+              </ul>
+            <strong> <li style="font-size:20px; line-height: 3em"> Internship </li> </strong>
+              <ul> 
+                <li> Selected using assessment of ability in their field of interest and/or major </li>
+                <li> Programs for students during their school or vacation periods </li>
+              </ul>
+              <strong> <li style="font-size:20px; line-height: 3em">Audience </li> </strong>
+              <ul>
+                <li>Camp: elementary, middle, and high school students</li>
+                <li>Internship: college students</li>
+              </ul>               
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Call to Action Start -->
+    <section class="call-action section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div class="cta-trial text-center">
+              <h3>Are You Ready To Get Started?</h3>
+              <p>Contact us for a free consultation session to see how we can best help you!</p>
+              <a href="#contact" class="btn btn-common btn-effect page-scroll">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Call to Action End -->
+
+    <!-- Features Section Start -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title">Why Choose Us</h2>
+          <span>Why</span>
+          <p class="section-subtitle">BANET helps students make meaningful decisions towards valuable experiences. Here's what makes our approach stand out.</p>
+        </div>
+        <div class="row">
+          <!-- Start featured -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="featured-box">
+              <div class="featured-icon">
+                <i class="lni-medall"></i>
+              </div>
+              <div class="featured-content">
+                <div class="icon-o"><i class="lni-medall"></i></div>
+                <h4>Top Tier Mentors</h4>
+                <p>Our teaching staff is hand selected from students and alumni of IVY league colleges and other top universities.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End featured -->
+          <!-- Start featured -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="featured-box">
+              <div class="featured-icon">
+                <i class="lni-ruler-pencil"></i>
+              </div>
+              <div class="featured-content">
+                <div class="icon-o"><i class="lni-ruler-pencil"></i></div>
+                <h4>One-on-One Tutoring</h4>
+                <p>Our sessions are always done on a 1-1 basis to guarantee maximum attention and care for a student.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End featured -->
+          <!-- Start featured -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="featured-box">
+              <div class="featured-icon">
+                <i class="lni-layers"></i>
+              </div>
+              <div class="featured-content">
+                <div class="icon-o"><i class="lni-layers"></i></div>
+                <h4>Holistic Approach</h4>
+                <p>Our advice is always based on a holistic and experienced understanding of the American educational system.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End featured -->
+          <!-- Start featured -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="featured-box">
+              <div class="featured-icon">
+                <i class="lni-grow"></i>
+              </div>
+              <div class="featured-content">
+                <div class="icon-o"><i class="lni-grow"></i></div>
+                <h4>Develop Long-Term Independence</h4>
+                <p>We are not only interested in immediate results but also cultivating proper habits of self-improvement that will have a big impact on a student's future.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End featured -->
+          <!-- Start featured -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="featured-box">
+              <div class="featured-icon">
+                <i class="lni-invention"></i>
+              </div>
+              <div class="featured-content">
+                <div class="icon-o"><i class="lni-invention"></i></div>
+                <h4>Based in a Top Academic Hub</h4>
+                <p>Being situated in Boston means we have resources from the top universities and programs in the world that we can offer to a student.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End featured -->
+          <!-- Start featured -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="featured-box">
+              <div class="featured-icon">
+                <i class="lni-thought"></i>
+              </div>
+              <div class="featured-content">
+                <div class="icon-o"><i class="lni-thought"></i></div>
+                <h4>Something for Everyone</h4>
+                <p>It's never too early to make meaningful decisions for your future. We offer consultation from 2-5 yr old children to to college students.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End featured -->
+        </div>
+      </div>
+    </section>
+    <!-- Features Section End -->    
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="section">      
+      <div class="contact-form">
+        <div class="container">
+          <div class="section-header">          
+            <h2 class="section-title">Contact Us</h2>
+            <span>Contact</span>
+            <p class="section-subtitle">Please reach out via email, Kakao talk or phone and we will be in touch as soon as possible!</p>
+          </div>
+          <div class="row">          
+            <div class="col-lg-4 col-md-4 col-xs-12">
+              <div class="contact-info">
+                <i class="lni-star"></i>
+                <h5>E-mail</h5>
+                <p>info@bostonacademy.network</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12">
+              <div class="contact-info">
+                <i class="lni-phone"></i>
+                <h5>Phone</h5>
+              <p>+1-781-428-6317</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12">
+              <div class="contact-info">
+                <i class="lni-laptop-phone"></i>
+                <h5>Kakao ID</h5>
+                <p>jkyungpark</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>            
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+
+      <!-- Copyright Start  -->
+      <div id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="site-info float-left">
+                <p>Copyright &copy; Boston Academy Network 2018</p>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright End -->
+
+    </footer>
+    <!-- Footer Section End --> 
+
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="lni-arrow-up"></i>
+    </a>
+
+    <div id="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>    
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery-min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Smooth Scrolling Plugin --> 
-    <script src="js/smooth-scroll.min.js"></script>
-
-    <!-- Custom Javascript -->
-    <script src="js/custom.js"></script>
-
-</body>
-
+    <script src="js/classie.js"></script>
+    <script src="js/color-switcher.js"></script>
+    <script src="js/jquery.mixitup.js"></script>
+    <script src="js/nivo-lightbox.js"></script>
+    <script src="js/owl.carousel.js"></script>    
+    <script src="js/jquery.stellar.min.js"></script>    
+    <script src="js/jquery.nav.js"></script>    
+    <script src="js/scrolling-nav.js"></script>    
+    <script src="js/jquery.easing.min.js"></script>     
+    <script src="js/wow.js"></script> 
+    <script src="js/jquery.vide.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>    
+    <script src="js/jquery.magnific-popup.min.js"></script>    
+    <script src="js/waypoints.min.js"></script>    
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>   
+    <script src="js/main.js"></script>
+    
+  </body>
 </html>
-
